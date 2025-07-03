@@ -44,26 +44,13 @@
     }
     section {
       padding: 2rem 1.5rem;
+      text-align: center;
       max-width: 800px;
       margin: 0 auto;
     }
     section h2 {
       color: #386641;
       font-size: 1.6rem;
-      text-align: center;
-    }
-    details {
-      background: #f5f5f5;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      margin-bottom: 1.5rem;
-    }
-    summary {
-      font-weight: bold;
-      font-size: 1.2rem;
-      cursor: pointer;
-      color: #386641;
     }
     .btn-primary {
       background-color: #6a994e;
@@ -72,9 +59,18 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
     .btn-primary:hover {
       background-color: #52784b;
+    }
+    details summary {
+      list-style: none;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
     }
     footer {
       background-color: #f2f0eb;
@@ -86,82 +82,128 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>Entre Aromas e Arte</h1>
     <p>Cuidar de ti através da natureza e da criação</p>
   </header>
 
   <nav>
+    <a href="#introducao">Início</a>
     <a href="#sobre-mim">Sobre Mim</a>
     <a href="#aromaterapia">Aromaterapia</a>
     <a href="#mandalas">Mandalas</a>
     <a href="#academia">Academia</a>
-    <a href="#poupar">Poupar</a>
-    <a href="#contacto">Contacto</a>
+    <a href="#cashback">Poupar</a>
   </nav>
+
+  <section id="introducao">
+    <p style="font-size:1.3rem; font-style:italic; color:#386641;">
+      ✨ Bem-vindos ao meu cantinho de inspiração 🌿<br />
+      Aqui partilho o que me move: o poder da natureza,<br />
+      a arte feita com o coração e pequenas escolhas<br />
+      que fazem grande diferença no dia a dia.<br /><br />
+      Tudo com simplicidade, intenção<br />
+      e um toque de magia feminina.
+    </p>
+  </section>
 
   <section id="sobre-mim">
     <h2>Quem sou eu</h2>
-    <p>Mulher, mãe, empreendedora — e sempre em evolução. Sou a Soraia...</p>
+    <p>Mulher, mãe, empreendedora — e sempre em evolução.<br>Olá, sou a Soraia.</p>
+    <p>
+      Sou mãe a tempo inteiro, empreendedora por paixão e alguém que acredita que o bem-estar começa dentro de nós. Adoro tecer mandalas, criar misturas naturais com óleos essenciais, partilhar dicas que me ajudam a poupar no dia a dia… e conversar sobre os desafios (e as alegrias) da maternidade.
+    </p>
+    <p>
+      Este espaço nasceu da vontade de partilhar aquilo que me faz bem — com outras mulheres que também procuram mais leveza, mais conexão e mais verdade na sua rotina.
+    </p>
+    <p>
+      Não tenho todas as respostas (quem tem?), mas tenho o coração aberto para partilhar o que funciona comigo. Aqui, cada tema que encontras faz parte da minha história.
+    </p>
+    <p>
+      Se sentires que algo aqui ressoa contigo, fico feliz por estares desse lado 💛
+    </p>
   </section>
 
   <section id="aromaterapia">
     <h2>🪔 Aromaterapia & DIY</h2>
+    <p>
+      Cuida de ti com o que a natureza tem de melhor. Descobre receitas simples, seguras e eficazes para o teu dia a dia – feitas por ti, com amor.
+    </p>
     <details>
-      <summary>Saber mais</summary>
-      <p>Aromaterapia é uma abordagem natural que usa óleos essenciais...</p>
-      <!-- Conteúdo completo inserido aqui -->
+      <summary class="btn-primary">Saber mais</summary>
+      <div>
+        <!-- Conteúdo detalhado da Aromaterapia entra aqui -->
+        <p>Conteúdo completo em breve...</p>
+      </div>
     </details>
   </section>
 
   <section id="mandalas">
     <h2>🧵 Mandalas com o Coração</h2>
+    <p>
+      Cada fio, cada nó, é uma meditação em movimento. Conhece o processo de criação das minhas mandalas tecidas e deixa-te envolver por esta arte que acalma e transforma.
+    </p>
     <details>
-      <summary>Saber mais</summary>
-      <p>As mandalas chegaram como convite ao silêncio interior...</p>
-      <!-- Conteúdo completo inserido aqui -->
+      <summary class="btn-primary">Saber mais</summary>
+      <div>
+        <!-- Conteúdo detalhado das Mandalas entra aqui -->
+        <p>Conteúdo completo em breve...</p>
+      </div>
     </details>
   </section>
 
   <section id="academia">
     <h2>👑 Academia das Poderosas</h2>
+    <p>
+      Faço parte de uma comunidade que inspira, empodera e transforma. Aqui partilho conteúdos e experiências da Academia das Poderosas – para que possas brilhar com autenticidade.
+    </p>
     <details>
-      <summary>Saber mais</summary>
-      <p>Academia das Poderosas é um espaço de transformação e empoderamento...</p>
-      <!-- Conteúdo completo inserido aqui -->
+      <summary class="btn-primary">Saber mais</summary>
+      <div>
+        <!-- Conteúdo detalhado da Academia entra aqui -->
+        <p>Conteúdo completo em breve...</p>
+      </div>
     </details>
   </section>
 
-  <section id="poupar">
-    <h2>💸 Dicas para Poupar</h2>
+  <section id="cashback">
+    <h2>💡 Dicas para Poupar</h2>
+    <p>
+      Acredito que viver bem também passa por fazer escolhas conscientes. Explora truques, apps e dicas práticas para poupares sem abdicar do que gostas.
+    </p>
     <details>
-      <summary>Saber mais</summary>
-      <p>Porque viver bem não tem de ser viver caro...</p>
-      <!-- Conteúdo completo inserido aqui -->
+      <summary class="btn-primary">Saber mais</summary>
+      <div>
+        <!-- Conteúdo detalhado do Cashback entra aqui -->
+        <p>Conteúdo completo em breve...</p>
+      </div>
     </details>
   </section>
 
   <section id="contacto">
     <h2>💬 Gostavas de conversar comigo?</h2>
-    <p>Se alguma partilha tocou em ti, ou se queres saber mais, envia-me uma mensagem.</p>
-    <form action="https://tally.so/r/mZAB6A" method="POST" target="_blank">
-      <input type="text" name="nome" placeholder="O teu nome" required><br>
-      <input type="email" name="email" placeholder="O teu email" required><br>
-      <textarea name="mensagem" placeholder="A tua mensagem" required></textarea><br>
-      <button type="submit">Enviar</button>
-    </form>
+    <p>
+      Se alguma partilha tocou em ti, ou se simplesmente queres saber mais, envia-me uma mensagem. Estou deste lado para te ouvir.
+    </p>
+    <iframe src="https://tally.so/r/mZAB6A" width="100%" height="500" style="border:none; border-radius:8px; overflow:hidden;"></iframe>
   </section>
 
   <footer>
-    <p>Segue-me nas redes sociais:</p>
-    <p><a href="https://www.facebook.com/EntreAromasEArte">Facebook</a> | <a href="https://www.instagram.com/soraialopesfilipe">Instagram</a></p>
-    <p>Email: <a href="mailto:aromasearte.soraia@gmail.com">aromasearte.soraia@gmail.com</a></p>
-    <div style="margin-top: 2rem;">
-      <p>📬 Recebe inspiração com alma</p>
-      <iframe src="https://tally.so/r/mBYRG4" width="100%" height="500" style="border:none; border-radius: 8px;"></iframe>
-      <p style="font-size: 0.9rem; color: #777; margin-top: 0.5rem;">🔒 Sem spam. Só partilhas com intenção, verdade e leveza.</p>
-    </div>
+    <p style="margin-bottom: 1rem;">Segue-me nas redes sociais</p>
+    <p style="margin-bottom: 1rem;">
+      <a href="https://www.facebook.com/EntreAromasEArte" target="_blank" rel="noopener noreferrer" style="color: #5a7849; margin: 0 1rem; text-decoration: none;">Facebook</a> |
+      <a href="https://www.instagram.com/soraialopesfilipe" target="_blank" rel="noopener noreferrer" style="color: #5a7849; margin: 0 1rem; text-decoration: none;">Instagram</a>
+    </p>
+    <p style="margin-bottom: 2rem;">Email: <a href="mailto:aromasearte.soraia@gmail.com" style="color: #5a7849; text-decoration: none;">aromasearte.soraia@gmail.com</a></p>
+
+    <p style="margin-bottom: 0.8rem; font-weight: 600;">📬 Recebe inspiração com alma</p>
+    <p style="margin-bottom: 1.2rem;">Junta-te à minha newsletter e recebe dicas práticas, reflexões reais e conteúdos que te ajudam a criar mais leveza no teu dia a dia.</p>
+    <iframe src="https://tally.so/r/mBYRG4" width="100%" height="850" style="border:none; border-radius:8px; overflow:hidden;" loading="lazy"></iframe>
+    <p style="margin-top: 1rem; font-size: 0.9rem; color: #777;">🔒 Sem spam. Só partilhas com intenção, verdade e leveza.</p>
+
     <p style="margin-top: 2rem;">&copy; 2025 Entre Aromas e Arte · Criado com 🌿 por Soraia</p>
   </footer>
+
 </body>
 </html>
