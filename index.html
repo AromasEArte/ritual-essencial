@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entre Aromas e Arte</title>
   <style>
-    body {
+    <script>
+  function toggleAccordion(button) {
+    const content = button.nextElementSibling;
+    content.classList.toggle("show");
+  }
+</script>
+body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
@@ -81,6 +87,33 @@
   </style>
 </head>
 <body>
+  
+.accordion-button {
+  background-color: #dcefd8;
+  color: #386641;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.accordion-button:hover {
+  background-color: #c3e0be;
+}
+.accordion-content {
+  display: none;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+}
+.accordion-content.show {
+  display: block;
+}
 
   <header>
     <h1>Entre Aromas e Arte</h1>
@@ -125,8 +158,11 @@
   </section>
   
 <section id="aromaterapia">
+  <button class="accordion-button" onclick="toggleAccordion(this)">🪔 Aromaterapia & DIY</button>
+  <div class="accordion-content">
     <h2>Aromaterapia com Intenção</h2>
     <div class="aroma-content">
+      
       <h3>Cria rituais naturais que cuidam de ti, com amor e simplicidade.</h3>
       <p>A aromaterapia entrou na minha vida como um sussurro da natureza — e acabou por se tornar um apoio essencial no meu dia a dia como mulher, mãe e empreendedora. Aqui vais encontrar sugestões práticas, receitas DIY (faz tu mesma) e inspirações para usares os óleos essenciais com segurança, intenção e leveza.</p>
       <p>🌿 Desde sprays para dormir melhor até sinergias para momentos de stress ou rituais femininos, cada partilha é testada por mim e feita com carinho.</p>
@@ -155,6 +191,9 @@
         <li>Dicas práticas e seguras para usá-los no teu dia a dia</li>
       </ul>
       <p><a class="btn-primary" href="https://tally.so/r/wQXQLl" target="_blank">Descarrega o teu guia gratuito</a></p>
+</section>
+       </div>
+  </div>
 </section>
 
   <section id="mandalas">
